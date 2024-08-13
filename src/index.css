@@ -1,13 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li {
+  margin-right: 20px;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.orb {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 33%;
+  filter: blur(10px);
+  will-change: transform;
+}
+
+@media(max-width:760px) {
+  .orb {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@font-face {
+  font-family: 'Light';
+  src: local('Funky'), url('./fonts/SuperFunky-lgmWw.ttf') format('truetype');
+}
+
+.funkyText {
+  font-family: Light;
+}
+
+.linear-text {
+  background-image: linear-gradient(to right, #7805fc 45%, #0077ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
