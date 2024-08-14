@@ -32,7 +32,7 @@ export default function Projects() {
                     image={ThorImg}
                     imageAlt='Thor Transport ScreenShot'
                     link="https://thor-mg510vppm-cody-scotts-projects.vercel.app/"
-                    title='Netflix Clone'
+                    title='Thor Transport'
                     description='Created a website for a semi truck company specializing in road freight, leveraging React for a dynamic and responsive user experience.
                      The site features detailed service descriptions, a fleet overview, and an easy-to-use booking system for freight services.' />
             </div>
