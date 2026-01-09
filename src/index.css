@@ -1,0 +1,35 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #1a191d;
+}
+
+@font-face {
+  font-family: "orbFont";
+  src: url("./assets/fonts/orbFont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+::selection {
+  background: #000;
+  color: #0afe06;
+}
+
+@layer utilities {
+  @keyframes bounce-x {
+    0%,
+    100% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(25%);
+    }
+  }
+
+  .animate-bounce-x {
+    animation: bounce-x 1s infinite ease-in-out;
+  }
+}
