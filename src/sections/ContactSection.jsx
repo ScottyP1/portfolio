@@ -1,5 +1,4 @@
-import { FaLinkedin } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaSquarePhone } from "react-icons/fa6";
 
@@ -63,6 +62,16 @@ export default function ContactSection() {
                   <div className="p-4 bg-white rounded-xl flex items-center gap-4 hover:scale-105 transition">
                     <FaGithub size={30} color="black" />
                     <h3 className="text-black">GitHub</h3>
+                  </div>
+                </a>
+                <a
+                  href="https://www.youtube.com/@Scotty_p12"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="p-4 bg-white rounded-xl flex items-center gap-4 hover:scale-105 transition">
+                    <FaYoutube size={30} color="red" />
+                    <h3 className="text-black">Youtube</h3>
                   </div>
                 </a>
               </div>

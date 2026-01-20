@@ -16,18 +16,21 @@ export default function ProjectsSection() {
             label="Web App"
             image={sweetSting}
             link="https://sweet-sting.vercel.app/"
+            color="#CDF5EE"
           />
           <ProjectCard
             title="TrackMateMx"
             label="Web App"
             image={trackMate}
             link="https://www.trackmatemx.com/"
+            color="#3D81F7"
           />
           <ProjectCard
             title="YoMezz"
             label="Web App"
             image={mezz}
             link="https://yomezz.com/"
+            color="#961744"
           />
           <ProjectCard
             className="md:col-span-3"
@@ -35,6 +38,7 @@ export default function ProjectsSection() {
             label="IOS App"
             image={appShowcase}
             link="https://apps.apple.com/us/app/trackmatemx/id6742335987"
+            color="#3D81F7"
           />
         </div>
       </div>

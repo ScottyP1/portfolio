@@ -30,7 +30,7 @@ const experiences = [
 export default function ExperienceSection() {
   return (
     <div className="pt-64 md:pt-16 min-h-screen w-full px-6">
-      <div className="relative flex flex-col md:grid md:grid-cols-3 gap-6 max-w-[1200px] w-full mx-auto">
+      <div className="relative flex flex-col md:grid md:grid-cols-3 gap-6 max-w-300 w-full mx-auto">
         <h1 className="col-span-3 text-white text-center text-3xl md:text-6xl tracking-[5px] font-[orbFont] mb-6">
           Experience
         </h1>

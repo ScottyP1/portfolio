@@ -31,9 +31,9 @@ const NavBar = () => {
           onClick={toggleMobileMenu}
           className="flex flex-col justify-center items-center w-12 h-12 bg-black rounded-full gap-1.5 p-2"
         >
-          <div className="h-[2px] w-5 bg-gray-400" />
-          <div className="h-[2px] w-4 bg-gray-400 ml-auto" />
-          <div className="h-[2px] w-3 bg-gray-400" />
+          <div className="h-0.5 w-5 bg-gray-400" />
+          <div className="h-0.5 w-4 bg-gray-400 ml-auto" />
+          <div className="h-0.5 w-3 bg-gray-400" />
         </button>
       </div>
 
@@ -47,7 +47,7 @@ const NavBar = () => {
           }`}
         >
           CodyScott
-          <span className="absolute bottom-[7px] -right-[6px] h-1 w-1 rounded-full bg-current" />
+          <span className="absolute bottom-1.75 -right-1.5 h-1 w-1 rounded-full bg-current" />
         </div>
         <span className="text-purple-400 animate-pulse">_</span>
       </div>

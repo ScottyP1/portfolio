@@ -25,7 +25,7 @@ export default function WorkSection() {
 
         <div className="relative flex flex-col md:flex-row gap-16 items-center justify-between max-w-6xl w-full">
           {/* Left Side: Text */}
-          <div className="relative flex flex-col gap-6 max-w-[500px] px-2 md:px-0">
+          <div className="relative flex flex-col gap-6 max-w-125 px-2 md:px-0">
             <h2 className="text-white text-2xl md:text-6xl font-[orbFont] z-10">
               TrackMateMX
             </h2>
@@ -59,7 +59,7 @@ export default function WorkSection() {
             autoPlay
             muted
             playsInline
-            className="w-[250px] md:w-[350px] rotate-12"
+            className="w-62.5 md:w-87.5 rotate-12"
           />
         </div>
       </div>

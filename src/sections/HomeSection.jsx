@@ -7,7 +7,7 @@ export default function HomeSection() {
     <SectionWrapper>
       {/* Background Video */}
       <video
-        className="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-[2000ms] ease-in"
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-2000 ease-in"
         src={HomeBGVideo}
         autoPlay
         muted

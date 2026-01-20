@@ -5,6 +5,7 @@ import ExperienceSection from "./sections/ExperienceSection";
 import ContactSection from "./sections/ContactSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import CertificationSection from "./sections/CertificationSection";
+import AboutSection from "./sections/AboutSection";
 
 import NavBar from "./components/NavBar";
 
@@ -25,6 +26,9 @@ function App() {
         </section>
         <section id="certificates">
           <CertificationSection />
+        </section>
+        <section id="about">
+          <AboutSection />
         </section>
         <section id="contact">
           <ContactSection />

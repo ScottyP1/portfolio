@@ -73,6 +73,7 @@ export default function CertificationSection() {
         <div className="relative flex flex-col md:grid md:grid-cols-4 gap-6 w-full max-w-6xl px-6 md:px-0">
           {certs.map((item) => (
             <CertificateCard
+              key={item.title}
               title={item.title}
               label={item.label}
               image={item.image}
