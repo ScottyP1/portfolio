@@ -268,8 +268,8 @@ export const LogoLoop = memo(
 
     const cssVariables = useMemo(
       () => ({
-        "--logoloop-gap": `${gap}px`,
-        "--logoloop-logoHeight": `${logoHeight}px`,
+        "--logoloop-gap": toCssLength(gap) ?? "32px",
+        "--logoloop-logoHeight": toCssLength(logoHeight) ?? "28px",
         ...(fadeOutColor && { "--logoloop-fadeColor": fadeOutColor }),
       }),
       [gap, logoHeight, fadeOutColor]

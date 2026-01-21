@@ -69,8 +69,7 @@ export default function CertificationSection() {
           Certificates
         </h1>
 
-        <div className="relative flex flex-col md:grid md:grid-cols-4 gap-6 w-full max-w-6xl px-6 md:px-0"></div>
-        <div className="relative flex flex-col md:grid md:grid-cols-4 gap-6 w-full max-w-6xl px-6 md:px-0">
+        <div className="relative flex flex-row md:grid md:grid-cols-4 gap-4 md:gap-6 w-full max-w-6xl px-6 md:px-0 overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none scroll-px-6 pb-2">
           {certs.map((item) => (
             <CertificateCard
               key={item.title}
@@ -78,6 +77,7 @@ export default function CertificationSection() {
               label={item.label}
               image={item.image}
               link={item.link}
+              className="flex-shrink-0 min-w-[240px] max-w-[280px] md:min-w-0 md:max-w-none snap-start"
             />
           ))}
         </div>

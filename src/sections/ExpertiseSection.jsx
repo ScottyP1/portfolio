@@ -73,7 +73,7 @@ const techLogos = [
 export default function ExpertiseSection() {
   return (
     <SectionWrapper>
-      <div className="relative flex flex-col md:grid md:grid-cols-3 gap-6 max-w-300">
+      <div className="relative w-full max-w-6xl flex flex-col md:grid md:grid-cols-3 gap-6">
         {/* Heading spans all columns */}
         <div className="flex col-span-3 justify-center items-center gap-4">
           <h1 className="text-white text-center text-3xl md:text-6xl tracking-[5px] font-[orbFont]">
@@ -142,18 +142,19 @@ export default function ExpertiseSection() {
             <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle,rgba(26,25,29,0)_20%,#1a191d_100%)]" />
           </div>
         </div>
-        <div className="col-span-3 w-full">
+        <div className="col-span-3 w-full overflow-hidden">
           <LogoLoop
             logos={techLogos}
             speed={120}
             direction="left"
-            logoHeight={48}
-            gap={40}
+            logoHeight="clamp(28px, 7vw, 48px)"
+            gap="clamp(16px, 6vw, 40px)"
             hoverSpeed={0}
             scaleOnHover
             fadeOut
             fadeOutColor="#1A191D"
             ariaLabel="Technology partners"
+            className="w-full min-w-0"
           />
         </div>
       </div>
