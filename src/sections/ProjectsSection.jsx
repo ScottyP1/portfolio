@@ -5,7 +5,8 @@ import sweetSting from "../assets/images/projects/sweetSting.jpg";
 import trackMate from "../assets/images/projects/trackMate.jpg";
 import mezz from "../assets/images/projects/mezz.jpg";
 import appShowcase from "../assets/images/projects/AppShowcase.png";
-
+import consultrix from "../assets/images/projects/consultrix.png";
+import oddbnb from "../assets/images/projects/oddbnb.png";
 export default function ProjectsSection() {
   return (
     <SectionWrapper>
@@ -31,6 +32,20 @@ export default function ProjectsSection() {
             image={mezz}
             link="https://yomezz.com/"
             color="#961744"
+          />
+          <ProjectCard
+            title="Consultrix"
+            label="Web App"
+            image={consultrix}
+            link="https://consultrix-client.vercel.app/"
+            color="#00eaff"
+          />
+          <ProjectCard
+            title="Oddbnb"
+            label="Web App"
+            image={oddbnb}
+            link="https://odd-bnb-client.vercel.app/"
+            color="#9900ff"
           />
           <ProjectCard
             className="md:col-span-3"

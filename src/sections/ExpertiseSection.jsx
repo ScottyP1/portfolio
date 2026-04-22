@@ -91,7 +91,7 @@ export default function ExpertiseSection() {
           <ExpertiseCard
             highlight="bg-red-500"
             icon={<MdComputer size={50} color="white" />}
-            description="Experienced in both functional and OOP: Python, JavaScript"
+            description="Experienced in both functional and OOP: Python, JavaScript, Java, SpringBoot"
           >
             Software Development
           </ExpertiseCard>
@@ -101,7 +101,7 @@ export default function ExpertiseSection() {
           <ExpertiseCard
             highlight="bg-purple-500"
             icon={<FaReact size={50} color="white" />}
-            description="Passionate about UI/UX. Over 3 years of development experience in HTML, CSS, JS, React and NextJS frameworks."
+            description="Passionate about UI/UX. Over 3 years of development experience in HTML, CSS, JS, React, NextJs, TanStack Start, TanStack Query, RTK."
           >
             Front-End Dev
             <br /> React, Vite, NEXTJS
@@ -126,7 +126,7 @@ export default function ExpertiseSection() {
             className="w-full items-start md:items-center text-start md:text-center mb-0"
             icon={<FaCogs size={50} color="white" />}
             highlight="bg-green-500"
-            description="Bridging front-end and back-end with React, Express, and Django. Comfortable working across the stack, from building UI components to managing databases and server-side logic."
+            description="Bridging front-end and back-end with React, Express, Django, SpringBoot. Comfortable working across the stack, from building UI components to managing databases and server-side logic."
           >
             Full-Stack Dev
           </ExpertiseCard>
