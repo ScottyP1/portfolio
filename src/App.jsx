@@ -1,6 +1,5 @@
 import Home from "./sections/HomeSection";
 import ExpertiseSection from "./sections/ExpertiseSection";
-import WorkSection from "./sections/WorkSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import ContactSection from "./sections/ContactSection";
 import ProjectsSection from "./sections/ProjectsSection";
@@ -21,7 +20,6 @@ function App() {
           <ExpertiseSection />
         </section>
         <section id="projects">
-          <WorkSection />
           <ProjectsSection />
         </section>
         <section id="certificates">

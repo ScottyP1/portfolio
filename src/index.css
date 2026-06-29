@@ -36,6 +36,60 @@ body {
   .animate-bounce-x {
     animation: bounce-x 1s infinite ease-in-out;
   }
+
+  @keyframes ken-burns {
+    0%   { transform: scale(1)    translate(0,      0);     }
+    33%  { transform: scale(1.08) translate(-1.5%,  0.8%);  }
+    66%  { transform: scale(1.12) translate(1.2%,  -0.6%);  }
+    100% { transform: scale(1)    translate(0,      0);     }
+  }
+
+  .animate-ken-burns {
+    animation: ken-burns 30s ease-in-out infinite alternate;
+  }
+
+  @keyframes float-particle {
+    0%, 100% { transform: translate(0,     0)    scale(1);    opacity: 0.7; }
+    25%       { transform: translate(8px,  -18px) scale(1.1);  opacity: 0.9; }
+    50%       { transform: translate(-6px, -32px) scale(0.85); opacity: 0.4; }
+    75%       { transform: translate(-14px,-12px) scale(1.05); opacity: 0.8; }
+  }
+
+  .animate-float-particle {
+    animation: float-particle ease-in-out infinite;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  @keyframes blink-cursor {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+  }
+  .animate-blink {
+    animation: blink-cursor 0.8s step-end infinite;
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 0.18; }
+    50%       { opacity: 0.28; }
+  }
+  .animate-glow-pulse {
+    animation: glow-pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes scroll-hint {
+    0%, 100% { transform: translateY(0); opacity: 0.4; }
+    50%       { transform: translateY(8px); opacity: 0.8; }
+  }
+  .animate-scroll-hint {
+    animation: scroll-hint 2s ease-in-out infinite;
+  }
 }
 
 @theme inline {
